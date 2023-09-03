@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="quiz-form.css">
+    
+</head>
+<body>
+<div class="app">
+    <form id="login-form">
+        
+        <div class="box">
+            <h1>Register Your account</h1>
+            <div class="onyedika">
+                <p>
+                
+                    <input type="text" id="username" name="username" placeholder="Username
+                    " required minlength="8" maxlength="10">
+                    <span id="nameError" class="error"></span> <!-- Error message for username -->
+                </p>
+                <p>
+                    <input type="password" name="pass" placeholder="Password" id="passdcode" required minlength="4" maxlength="6">
+                    <span id="passwordError" class="error"></span> <!-- Error message for password -->
+                </p>
+            </div>
+        </div>
+        
+        <button type="submit" id="btn"><a href="pages/quiz.html" ></a>Login</button>
+    </form>
+</div>
+    <script>
+        
+        document.getElementById("login-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent form submission
+            var username = document.getElementById("username").value;
+            localStorage.setItem("username", username); // Store the username in localStorage
+            window.location.href = "pages/quiz.html"; // Redirect to the quiz page
+        });
+    </script>
+</body>
+</html>
