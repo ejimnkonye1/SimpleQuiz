@@ -8,6 +8,7 @@ const questions = [
                 {text: "dog", correct: false},
         ]
    },
+   
    {
     questions:"What is smallest continent in the world?",
     answers: [
@@ -17,6 +18,39 @@ const questions = [
             {text: "africa", correct: false},
     ]
 },
+
+{
+    questions: "What is the capital of France?",
+    answers: [
+        { text: "Berlin", correct: false },
+        { text: "Madrid", correct: false },
+        { text: "Rome", correct: false },
+        { text: "Paris", correct: true },
+    ]
+},
+{
+    questions: "Which planet is known as the Red Planet?",
+    answers: [
+        { text: "Earth", correct: false },
+        { text: "Mars", correct: true },
+        { text: "Venus", correct: false },
+        { text: "Jupiter", correct: false },
+    ]
+},
+{
+    questions: "What is the largest organ in the human body?",
+    answers: [
+        { text: "Heart", correct: false },
+        { text: "Skin", correct: true },
+        { text: "Brain", correct: false },
+        { text: "Liver", correct: false },
+    ]
+},
+
+
+
+
+
 {
     questions:"how many state is in nigeria",
     answers: [
