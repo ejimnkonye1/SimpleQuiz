@@ -69,3 +69,30 @@ body{
 .incorrect{
     background: rgb(221, 136, 136);
 }
+
+/* Add animation styles to the timer */
+.timer {
+    float: right;
+    margin-top: 20px;
+    
+    animation: countdown 10s ;
+    /* Change the color as the timer progresses */
+    color: #4CAF50; /* Initial color (green) */
+  }
+  
+  /* Define the countdown animation */
+  @keyframes countdown {
+    0% {
+      color: #4CAF50; /* Green at the start */
+      
+    }
+    50% {
+      color: #FFC107; /* Yellow in the middle */
+      
+    }
+    100% {
+      color: #F44336; /* Red at the end */
+      
+    }
+  }
+  
