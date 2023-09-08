@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="simple.css">
+    <audio id="correct-sound" src="../audio/training-program-correct2-88734.mp3"></audio>
+    <audio id="incorrect-sound" src="../audio/buzzer-or-wrong-answer-20582.mp3"></audio>
+    <audio id="clock-tick" src="../audio/clock-tick-101150.mp3"></audio>
+
+</head>
+<body>
+    <div class="app">
+        <!-- The alert script is placed here on the quiz page -->
+        <script>
+            // Retrieve the username from localStorage
+            var username = localStorage.getItem("username");
+
+            // Check if a username is stored in localStorage
+            if (username) {
+                // Display an alert with the username
+                alert( " Welcome To Simple Quiz, " + username   + 
+                 " Click Ok Or Close To Start Quiz" );
+            } else {
+                // Handle the case when no username is found (e.g., redirect to the login page)
+                window.location.href = "index.html";
+            }
+        </script>
+ <div id="timer" class="timer"></div>
+        <h1>Simple Quiz</h1>
+       
+
+        <div class="quiz">
+            <h2 id="question">Questions goes here</h2>
+            
+            <div id="answer-button">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+
+    <script src="../java.js"></script>
+</body>
+</html>

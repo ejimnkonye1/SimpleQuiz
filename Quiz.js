@@ -1,106 +1,101 @@
 const questions = [
     {
-        questions:"What is larget animal in the world",
+        question: "What does HTML stand for?",
         answers: [
-                {text: "shark", correct: false},
-                {text: "blue whale", correct: true},
-                {text: "lion", correct: false},
-                {text: "dog", correct: false},
+            { text: "Hypertext Markup Language", correct: true },
+            { text: "Hyperlink and Text Markup Language", correct: false },
+            { text: "High-Level Text Markup Language", correct: false },
+            { text: "Hypertext Transfer Language", correct: false },
         ]
-   },
-   
-   {
-    questions: "What is the capital of Canada?",
-    answers: [
-        { text: "Ottawa", correct: true },
-        { text: "Toronto", correct: false },
-        { text: "Montreal", correct: false },
-        { text: "Vancouver", correct: false },
-    ]
-},
-{
-    questions: "Who wrote the play 'Romeo and Juliet'?",
-    answers: [
-        { text: "Charles Dickens", correct: false },
-        { text: "William Shakespeare", correct: true },
-        { text: "Jane Austen", correct: false },
-        { text: "Mark Twain", correct: false },
-    ]
-},
-{
-    questions: "What is the chemical symbol for gold?",
-    answers: [
-        { text: "Au", correct: true },
-        { text: "Ag", correct: false },
-        { text: "Fe", correct: false },
-        { text: "Hg", correct: false },
-    ]
-},
-{
-    questions: "Which planet is known as the 'Morning Star' or 'Evening Star'?",
-    answers: [
-        { text: "Mars", correct: false },
-        { text: "Venus", correct: true },
-        { text: "Mercury", correct: false },
-        { text: "Jupiter", correct: false },
-    ]
-},
-
- {
-    questions:"What is smallest continent in the world?",
-    answers: [
-            {text: "asia", correct: false},
-            {text: "australia", correct: true},
-            {text: "arctic", correct: false},
-            {text: "africa", correct: false},
-    ]
-},
-
-{
-    questions: "What is the capital of France?",
-    answers: [
-        { text: "Berlin", correct: false },
-        { text: "Madrid", correct: false },
-        { text: "Rome", correct: false },
-        { text: "Paris", correct: true },
-    ]
-},
-{
-    questions: "Which planet is known as the Red Planet?",
-    answers: [
-        { text: "Earth", correct: false },
-        { text: "Mars", correct: true },
-        { text: "Venus", correct: false },
-        { text: "Jupiter", correct: false },
-    ]
-},
-{
-    questions: "What is the largest organ in the human body?",
-    answers: [
-        { text: "Heart", correct: false },
-        { text: "Skin", correct: true },
-        { text: "Brain", correct: false },
-        { text: "Liver", correct: false },
-    ]
-},
-
-
-
-
-
-{
-    questions:"How Many State is in Nigeria",
-    answers: [
-            {text: "34", correct: false},
-            {text: "35", correct: false},
-            {text: "30", correct: false},
-            {text: "36", correct: true,}
-    ]
-}
-        
+    },
+    {
+        question: "Which HTML tag is used to create a hyperlink?",
+        answers: [
+            { text: "<link>", correct: false },
+            { text: "<a>", correct: true },
+            { text: "<h1>", correct: false },
+            { text: "<p>", correct: false },
+        ]
+    },
+    {
+        question: "What is the correct HTML tag for inserting a line break?",
+        answers: [
+            { text: "<lb>", correct: false },
+            { text: "<linebreak>", correct: false },
+            { text: "<br>", correct: true },
+            { text: "<break>", correct: false },
+        ]
+    },
+    {
+        question: "Which HTML element is used for creating an ordered list?",
+        answers: [
+            { text: "<list>", correct: false },
+            { text: "<ol>", correct: true },
+            { text: "<ul>", correct: false },
+            { text: "<li>", correct: false },
+        ]
+    },
+    {
+        question: "What is the purpose of the HTML <head> element?",
+        answers: [
+            { text: "To define the main content of the document", correct: false },
+            { text: "To specify the title, metadata, and links to external resources", correct: true },
+            { text: "To create a heading at the top of the page", correct: false },
+            { text: "To define a section of content", correct: false },
+        ]
+    },
+    {
+        question: "Which HTML tag is used to define an image?",
+        answers: [
+            { text: "<img>", correct: true },
+            { text: "<picture>", correct: false },
+            { text: "<image>", correct: false },
+            { text: "<photo>", correct: false },
+        ]
+    },
+    {
+        question: "What is the correct HTML tag for creating a hyperlink to an email address?",
+        answers: [
+            { text: "<link>", correct: false },
+            { text: "<mail>", correct: false },
+            { text: "<a href='mailto:email@example.com'>", correct: true },
+            { text: "<email>", correct: false },
+        ]
+    },
+    {
+        question: "Which HTML tag is used for creating a table?",
+        answers: [
+            { text: "<table>", correct: true },
+            { text: "<tab>", correct: false },
+            { text: "<tr>", correct: false },
+            { text: "<td>", correct: false },
+        ]
+    },
+    {
+        question: "What does the HTML <iframe> element allow you to do?",
+        answers: [
+            { text: "Embed audio files", correct: false },
+            { text: "Create interactive forms", correct: false },
+            { text: "Embed content from another website", correct: true },
+            { text: "Define a section of content", correct: false },
+        ]
+    },
+    {
+        question: "Which HTML tag is used to define the structure of an HTML document, including the header and body sections?",
+        answers: [
+            { text: "<structure>", correct: false },
+            { text: "<layout>", correct: false },
+            { text: "<html>", correct: true },
+            { text: "<body>", correct: false },
+        ]
+    }
 ];
 
-const questionsElement = document.getElementById("question");
+// You can add more questions to this array if needed.
+
+
+
+ const questionsElement = document.getElementById("question");
  const answerButtons = document.getElementById("answer-button");
  const nextButton = document.getElementById("next-btn");
 

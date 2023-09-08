@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include your custom CSS file (styles.css) -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9c0b7a0ad5.js" crossorigin="anonymous"></script>
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+         blockquote{
+            /* background-image: url(../images/african-american-young-programmer-wearing-headphone-while-typing-security-codes-business-website-working-rmeote-from-home-employee-programming-software-application-software-screen.jpg);  */
+        }
+        a {
+            color: white;
+        }
+        .card{
+            max-height: 220px;
+        }
+        .start{
+            margin-top: 100px;
+        }
+        .card {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+       }
+
+      .html:hover {
+    border-color: yellow;
+    transform: scale(1.05); 
+       }
+       .css:hover{
+        border-color: blue;
+        transform: scale(1.05);
+       }
+       .js:hover{
+        border-color: red;
+        transform: scale(1.05);
+       }
+
+       .display-4 {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 3s forwards;
+}
+
+@keyframes fadeInScale {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+       
+    </style>
+</head>
+<body>
+
+        
+        <header>
+            <!-- Bootstrap navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Quiz App </a>
+                <div class="d-none d-sm-block">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quiz</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-user fa-2x"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                                
+                                <a class="dropdown-item" href="#" id="">Profile</a>
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Sign Out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="app">
+            <!-- The alert script is placed here on the quiz page -->
+
+        <main class="container mt-4 py-5">
+            <div class="welcome-container">
+               
+                <h1 class="display-4" >Welcome <span id="username"></span></h1>
+            
+            <p class="" data-aos="slide-down" data-aos-duration="3000"   >Choose a subject for your quiz:</p>
+            <div class="row mt-3">
+                <div class="col-md-4 d-flex "   data-aos="fade-right" data-aos-duration="3000">
+                    <div class="card html mb-4 ">
+                        <div class="card-body">
+                            <h2 class="card-title border-bottom text-warning text-center"><i class="fa-brands fa-html5"></i></h2>
+                            <p class="card-text mb-3">Put your HTML skills to the test and explore the intricacies of markup languages with our challenging quiz.</p>
+                            <div class="text-center ">
+                                <a href="../pages/quiz.html" class="btn btn-warning " >Start Quiz</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex "  data-aos="slide-up" data-aos-duration="3000">
+                    <div class="card css mb-4 " >
+                        <div class="card-body">
+                            <h2 class="card-title border-bottom text-info text-center"><i class="fa-brands fa-css3-alt"></i></h2>
+                            <p class="card-text mb-3">Dive into the world of Cascading Style Sheets and put your CSS expertise to the test with our comprehensive quiz.</p>
+                          <div class="text-center ">
+                            <div class="text-center ">
+                                <a href="/third.html" class="btn btn-info " >Start Quiz</a>
+                            </div>
+ 
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex" data-aos="fade-left" data-aos-duration="3000">
+                    <div class="card js mb-4 "  >
+                        <div class="card-body">
+                            <h2 class="card-title border-bottom  text-center text-danger"><i class="fab fa-js"></i></h2>
+                            <p class="card-text mb-3">Test your knowledge of this powerful scripting language and see if you can conquer the JavaScript world!</p>
+                         <div class="text-center ">
+                            <div class="text-center">
+                                <a href="/java.html" class="btn btn-danger "  >Start Quiz</a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </main>
+      
+        
+    </div>
+
+<script>
+    // Retrieve the username from localStorage
+var storedUsername = localStorage.getItem("username");
+
+// Get a reference to the username element in the HTML
+const usernameElement = document.getElementById("username");
+
+// Check if a username is stored in localStorage
+if (storedUsername) {
+    // Display the username in the welcome message
+    usernameElement.textContent = ` ${storedUsername}! ` ;
+} else {
+    // Handle the case when no username is found (e.g., redirect to the login page)
+    window.location.href = "index.html";
+}
+
+</script>
+    <!-- Include Bootstrap JS and jQuery (add these before your custom script.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include your custom JavaScript file (script.js) -->
+    <script src="/Quiz.js"></script>
+      <script>
+        AOS.init();
+    </script>
+   
+     
+</body>
+<footer class="text-center mt-5 bg-dark text-white p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2023 Quiz App</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline social-icons">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

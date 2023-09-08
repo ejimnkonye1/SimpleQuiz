@@ -27,7 +27,7 @@
             </div>
         </div>
         
-        <button type="submit" id="btn"><a href="pages/quiz.html" ></a>Login</button>
+        <button type="submit" id="btn"><a href="pages/welcome.html" ></a>Login</button>
     </form>
 </div>
     <script>
@@ -36,7 +36,7 @@
             e.preventDefault(); // Prevent form submission
             var username = document.getElementById("username").value;
             localStorage.setItem("username", username); // Store the username in localStorage
-            window.location.href = "pages/quiz.html"; // Redirect to the quiz page
+            window.location.href = "pages/welcome.html"; // Redirect to the quiz page
         });
     </script>
 </body>
