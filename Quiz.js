@@ -11,28 +11,28 @@ const questions = [
     {
         question: "Which HTML tag is used to create a hyperlink?",
         answers: [
-            { text: "<link>", correct: false },
-            { text: "<a>", correct: true },
-            { text: "<h1>", correct: false },
-            { text: "<p>", correct: false },
+            { text: "< link>", correct: false },
+            { text: " < a>", correct: true },
+            { text: "< h1>", correct: false },
+            { text: "< p>", correct: false },
         ]
     },
     {
         question: "What is the correct HTML tag for inserting a line break?",
         answers: [
-            { text: "<lb>", correct: false },
-            { text: "<linebreak>", correct: false },
-            { text: "<br>", correct: true },
-            { text: "<break>", correct: false },
+            { text: "< lb>", correct: false },
+            { text: "< linebreak>", correct: false },
+            { text: "< br >", correct: true },
+            { text: "< break>", correct: false },
         ]
     },
     {
         question: "Which HTML element is used for creating an ordered list?",
         answers: [
-            { text: "<list>", correct: false },
-            { text: "<ol>", correct: true },
-            { text: "<ul>", correct: false },
-            { text: "<li>", correct: false },
+            { text: "< list>", correct: false },
+            { text: "< ol>", correct: true },
+            { text: "< ul>", correct: false },
+            { text: "< li>", correct: false },
         ]
     },
     {
@@ -47,28 +47,28 @@ const questions = [
     {
         question: "Which HTML tag is used to define an image?",
         answers: [
-            { text: "<img>", correct: true },
-            { text: "<picture>", correct: false },
-            { text: "<image>", correct: false },
-            { text: "<photo>", correct: false },
+            { text: "< img>", correct: true },
+            { text: "< picture>", correct: false },
+            { text: "< image>", correct: false },
+            { text: "< photo>", correct: false },
         ]
     },
     {
         question: "What is the correct HTML tag for creating a hyperlink to an email address?",
         answers: [
-            { text: "<link>", correct: false },
-            { text: "<mail>", correct: false },
-            { text: "<a href='mailto:email@example.com'>", correct: true },
-            { text: "<email>", correct: false },
+            { text: "< link>", correct: false },
+            { text: "< mail>", correct: false },
+            { text: "< a href='mailto:email@example.com'>", correct: true },
+            { text: "< email>", correct: false },
         ]
     },
     {
         question: "Which HTML tag is used for creating a table?",
         answers: [
-            { text: "<table>", correct: true },
-            { text: "<tab>", correct: false },
-            { text: "<tr>", correct: false },
-            { text: "<td>", correct: false },
+            { text: "< table>", correct: true },
+            { text: "< tab>", correct: false },
+            { text: " < tr>", correct: false },
+            { text: "< td>", correct: false },
         ]
     },
     {
@@ -83,10 +83,10 @@ const questions = [
     {
         question: "Which HTML tag is used to define the structure of an HTML document, including the header and body sections?",
         answers: [
-            { text: "<structure>", correct: false },
-            { text: "<layout>", correct: false },
-            { text: "<html>", correct: true },
-            { text: "<body>", correct: false },
+            { text: "< structure>", correct: false },
+            { text: "< layout>", correct: false },
+            { text: "< html>", correct: true },
+            { text: "< body>", correct: false },
         ]
     }
 ];

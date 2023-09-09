@@ -11,10 +11,10 @@ const questions = [
     {
         questions: "How can you include an external CSS file in an HTML document?",
         answers: [
-            { text: "<link rel='stylesheet' href='styles.css'>", correct: true },
-            { text: "<style src='styles.css'></style>", correct: false },
-            { text: "<css>styles.css</css>", correct: false },
-            { text: "<script src='styles.css'></script>", correct: false },
+            { text: "< link rel='stylesheet' href='styles.css'>", correct: true },
+            { text: "< style src='styles.css'></style>", correct: false },
+            { text: "< css>styles.css</css>", correct: false },
+            { text: "< script src='styles.css'></script>", correct: false },
         ]
     },
     {
