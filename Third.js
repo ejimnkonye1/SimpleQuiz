@@ -1,4 +1,4 @@
-const questions = [
+const cssquestions = [
     {
         questions: "What does CSS stand for?",
         answers: [
@@ -114,7 +114,7 @@ function startQuiz(){
 function showQuestion(){
     resetState();
     
-    let currentQuestion = questions[currentQuestionnum];
+    let currentQuestion = cssquestions[currentQuestionnum];
     let questionsno = currentQuestionnum + 1;
     questionsElement.innerHTML = questionsno + ". " + currentQuestion.questions
 
@@ -192,7 +192,7 @@ function selectAnswer(e){
 function showScore(){
     timerDisplay.style.display = "none";  // hide timer when quiz end.
     resetState();
-    const totalQuestions = questions.length;
+    const totalQuestions = questions.cssquestions.length;
     const percentageScore = (score / totalQuestions) * 100;
 
     let scoreMessage = "";
@@ -219,7 +219,7 @@ function showScore(){
 
 function handleNextButton(){
     currentQuestionnum++;
-    if(currentQuestionnum < questions.length){
+    if(currentQuestionnum < cssquestions.length){
         showQuestion();
         timerDisplay.style.display = "block";// show timer on next question
         startTimer(); // start timer for next question.
@@ -232,7 +232,7 @@ function handleNextButton(){
 }
 
  nextButton.addEventListener("click", ()=>{
-    if(currentQuestionnum < questions.length){
+    if(currentQuestionnum < cssquestions.length){
         handleNextButton();
     }else{
         startQuiz()

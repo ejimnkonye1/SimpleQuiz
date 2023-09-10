@@ -14,11 +14,21 @@
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <style>
-         blockquote{
-            /* background-image: url(../images/african-american-young-programmer-wearing-headphone-while-typing-security-codes-business-website-working-rmeote-from-home-employee-programming-software-application-software-screen.jpg);  */
-        }
+
+         body{
+            background-image: url(../images/developers-brainstorming-ideas-looking-code-computer-screens-asking-feedback-from-senior-developer-while-intern-joins-discussion-junior-programmers-collaborating-group-project.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+         
+         }
         a {
             color: white;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+            
         }
         .card{
             max-height: 220px;
@@ -56,16 +66,28 @@
     }
 }
 @media (max-width: 768px) {
+    .app{
+        width: 90%;
+    }
           h1{
             font-size: xx-small;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
           }
             .card{
-                width: 100%;
+                max-width: 100%;
+                margin-left: 40PX;
+                
             }
+.body{
+    background-repeat: no-repeat;
+        background-size: contain;
+      
+}
           
         }
 
-       
+        
     </style>
 </head>
 <body>
@@ -75,7 +97,7 @@
             <!-- Bootstrap navbar -->
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">Quiz App </a>
-                <div class="d-none d-sm-block">
+                <div class="d-none d-sm-block d-xs-none">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#">My Learning</a>
@@ -87,17 +109,18 @@
                 </div>
                 <div class="ml-auto">
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 <i class="fa-solid fa-user fa-2x"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            
+                            <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                                 
                                 <a class="dropdown-item" href="#" id="">Profile</a>
                                 <a class="dropdown-item" href="#">Settings</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Sign Out</a>
-                            </div>
+                            </div> -->
                         </li>
                     </ul>
                 </div>
@@ -119,7 +142,9 @@
                             <h2 class="card-title border-bottom text-warning text-center"><i class="fa-brands fa-html5"></i></h2>
                             <p class="card-text mb-3">Put your HTML skills to the test and explore the intricacies of markup languages with our challenging quiz.</p>
                             <div class="text-center ">
-                                <a href="../pages/quiz.html" class="btn btn-warning " >Start Quiz</a>
+                                
+                                <button class="btn btn-warning" id="switch-questions-btn-1"><a href="quiz.html?set=1">Start Quiz</a></button>
+
                             </div>
                         </div>
                     </div>
@@ -131,7 +156,12 @@
                             <p class="card-text mb-3">Dive into the world of Cascading Style Sheets and put your CSS expertise to the test with our comprehensive quiz.</p>
                           <div class="text-center ">
                             <div class="text-center ">
-                                <a href="/third.html" class="btn btn-info " >Start Quiz</a>
+                           
+                           
+                                <button class="btn btn-info" id="switch-questions-btn-2"><a href="quiz.html?set=2">Start Quiz</a></button>
+
+                              
+                                
                             </div>
  
                             
@@ -146,7 +176,8 @@
                             <p class="card-text mb-3">Test your knowledge of this powerful scripting language and see if you can conquer the JavaScript world!</p>
                          <div class="text-center ">
                             <div class="text-center">
-                                <a href="/java.html" class="btn btn-danger "  >Start Quiz</a>
+                             
+                                <button class="btn btn-danger" id="switch-questions-btn-3"><a href="quiz.html?set=3">Start Quiz</a></button>
                             </div>
                             
                         </div>
