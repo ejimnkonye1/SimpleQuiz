@@ -16,10 +16,11 @@
     <style>
 
          body{
-            background-image: url(../images/developers-brainstorming-ideas-looking-code-computer-screens-asking-feedback-from-senior-developer-while-intern-joins-discussion-junior-programmers-collaborating-group-project.jpg);
+            /* background-image: url(../images/developers-brainstorming-ideas-looking-code-computer-screens-asking-feedback-from-senior-developer-while-intern-joins-discussion-junior-programmers-collaborating-group-project.jpg);
     background-repeat: no-repeat;
     
-    background-size: cover;
+    background-size: cover; */
+    
          
          }
         a {
@@ -65,10 +66,8 @@
         transform: scale(1);
     }
 }
-@media (max-width: 768px) {
-    .app{
-        width: 90%;
-    }
+/* @media (max-width: 768px) {
+ 
           h1{
             font-size: xx-small;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -77,6 +76,11 @@
             .card{
                 max-width: 100%;
                 margin-left: 40PX;
+                height: 100%;
+                padding-bottom: 250px;
+                
+            }
+            button{
                 
             }
 .body{
@@ -85,16 +89,46 @@
       
 }
           
-        }
+        } */
+        @media (max-width: 768px) {
+    h1 {
+        font-size: xx-small;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0;
+    }
+    .card {
+        max-width: 100%;
+        height: 100%;
+        /* Adjust padding-bottom as needed or remove it */
+        /* padding-bottom: 250px; */
+    }
+    button {
+        /* You can add any necessary button styles here */
+    }
+    .body {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Adjust margin for the profile icon element */
+.nav-link.dropdown-toggle {
+    margin-right: 0; /* Set to the desired margin value */
+}
 
         
     </style>
 </head>
-<body>
+<body class="bg-light">
 
-        
+       
         <header>
-            <!-- Bootstrap navbar -->
+            
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">Quiz App </a>
                 <div class="d-none d-sm-block d-xs-none">
@@ -112,7 +146,7 @@
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 <i class="fa-solid fa-user fa-2x"></i>
-                            </a>
+                            </a> 
                             
                             <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                                 
@@ -120,14 +154,14 @@
                                 <a class="dropdown-item" href="#">Settings</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Sign Out</a>
-                            </div> -->
-                        </li>
+                            </div>  -->
+                         </li>
                     </ul>
                 </div>
             </nav>
-        </header>
-        <div class="app">
-            <!-- The alert script is placed here on the quiz page -->
+        </header> 
+        <!-- <div class="app">
+        
 
         <main class="container mt-4 py-5">
             <div class="welcome-container">
@@ -149,9 +183,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex "  data-aos="slide-up" data-aos-duration="3000">
-                    <div class="card css mb-4 " >
-                        <div class="card-body">
+                <div class="col-md-4  d-flex"  data-aos="slide-up" data-aos-duration="3000">
+                    <div class="card css mb-4" >
+                        <div class="card-body ">
                             <h2 class="card-title border-bottom text-info text-center"><i class="fa-brands fa-css3-alt"></i></h2>
                             <p class="card-text mb-3">Dive into the world of Cascading Style Sheets and put your CSS expertise to the test with our comprehensive quiz.</p>
                           <div class="text-center ">
@@ -188,8 +222,65 @@
         </main>
       
         
-       </div>
+       </div> -->
+       <div class="app">
+        <main class="container mt-4 py-5">
+            <div class="welcome-container">
+                <h1 class="display-4">Welcome <span id="username"></span></h1>
+                <p class="" data-aos="slide-down" data-aos-duration="3000">Choose a subject for your quiz:</p>
 
+
+
+                <section id="features" class="app-features-section mb-3 ">
+                    <div class="container-fluid ">
+                        
+                        
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4 mb-4 d-flex"  data-aos="fade-right" data-aos-duration="1000">
+                                <div class="feature-card  p-4 bg-white rounded shadow-sm d-flex flex-column h-80">
+                                    <div class="feature-icon">
+                                        <h2 class="card-title border-bottom text-warning text-center"><i class="fa-brands fa-html5"></i></h2>
+                                    </div>
+                                    <p class="card-text mb-3">Put your HTML skills to the test and explore the intricacies of markup languages with our challenging quiz.</p>
+                                    <div class="text-center">
+                                        <button class="btn btn-warning" id="switch-questions-btn-1"><a href="quiz.html?set=1">Start Quiz</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-4 mb-4 d-flex "  data-aos="zoom-in-up" data-aos-duration="1000">
+                                <div class="feature-card  p-4 bg-white rounded shadow-sm d-flex flex-column h-80">
+                                    <div class="feature-icon">
+                                        <h2 class="card-title border-bottom text-info text-center"><i class="fa-brands fa-css3-alt"></i></h2>
+                                    </div>
+                                    <p class="card-text mb-3">Dive into the world of Cascading Style Sheets and put your CSS expertise to the test with our comprehensive quiz.</p>
+                                    <div class="text-center">
+                                        <button class="btn btn-info" id="switch-questions-btn-2"><a href="quiz.html?set=2">Start Quiz</a></button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-4 col-lg-4 mb-4 d-flex"  data-aos="fade-right" data-aos-duration="1000">
+                                <div class="feature-card  p-4 bg-white rounded shadow-sm d-flex flex-column h-80">
+                                    <div class="feature-icon">
+                                        <h2 class="card-title border-bottom text-center text-danger"><i class="fab fa-js"></i></h2>
+                                    </div>
+                                    <p class="card-text mb-3">Test your knowledge of this powerful scripting language and see if you can conquer the JavaScript world!</p>
+                                    <div class="text-center">
+                                        <button class="btn btn-danger" id="switch-questions-btn-3"><a href="quiz.html?set=3">Start Quiz</a></button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+         
+            </div>
+        </main>
+    </div>
+    
 <script>
     // Retrieve the username from localStorage
 var storedUsername = localStorage.getItem("username");
@@ -219,18 +310,43 @@ if (storedUsername) {
    
      
 </body>
-<footer class="text-center mt-5 bg-dark text-white p-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p>&copy; 2023 Quiz App</p>
+
+
+<footer class="" style="background-color: #c8c1c1;  ">
+    <div class="container-fluid py-4">
+        <div class="row mt-4" id="contact">
+            <div class="col-lg-12">
+                <h4 class="mb-3">Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> <a class="text-decoration-none" href="mailto:support@billie.com" style="color: white;">support@billie.com</a></p>
+            
+                <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-1x" style="color: blue;"></i></a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="https://tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok fa-1x" style="color: #000;"></i></a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-1x" style="color: #000;"></i> </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="https://www.instagram.com/"  target="_blank"><i class="fab fa-instagram fa-1x" style="color: Tomato;"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 ">
+                <p>&copy; 2023 Simple Quiz. All rights reserved.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="text-decoration-none" href="#" target="_blank" style="color: #000;">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a class="text-decoration-none" href="#" target="_blank" style="color: #000;">Terms and Conditions</a></li>
                 </ul>
             </div>
         </div>
