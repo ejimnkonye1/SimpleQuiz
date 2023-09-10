@@ -1,6 +1,6 @@
 const questions = [
     {
-        questions: "What does HTML stand for?",
+        question: "What does HTML stand for?",
         answers: [
             { text: "Hypertext Markup Language", correct: true },
             { text: "Hyperlink and Text Markup Language", correct: false },
@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        questions: "Which HTML tag is used to create a hyperlink?",
+        question: "Which HTML tag is used to create a hyperlink?",
         answers: [
             { text: "< link>", correct: false },
             { text: " < a>", correct: true },
@@ -18,7 +18,7 @@ const questions = [
         ]
     },
     {
-        questions: "What is the correct HTML tag for inserting a line break?",
+        question: "What is the correct HTML tag for inserting a line break?",
         answers: [
             { text: "< lb>", correct: false },
             { text: "< linebreak>", correct: false },
@@ -361,12 +361,13 @@ function showQuestion() {
     currentQuestionnum = 0;
     score = 0;
     showQuestion();
+    switchQuestionSet.style.display = 'none'
   }
   
   const switchQuestionsButton1 = document.getElementById("switch-questions-btn-1");
 const switchQuestionsButton2 = document.getElementById("switch-questions-btn-2");
 const switchQuestionsButton3 = document.getElementById("switch-questions-btn-3");
-const switchQuestionsButton4 = document.getElementById("switch-questions-btn-4");
+
 
 switchQuestionsButton1.addEventListener("click", () => {
   switchQuestionSet(questions);
@@ -380,9 +381,6 @@ switchQuestionsButton3.addEventListener("click", () => {
   switchQuestionSet(questions3);
 });
 
-switchQuestionsButton4.addEventListener("click", () => {
-  switchQuestionSet(questions4);
-});
 
 function resetState(){
     nextButton.style.display = "none"
