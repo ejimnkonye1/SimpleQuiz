@@ -51,8 +51,25 @@ body{
     cursor: no-drop;
 
 }
+#home-btn{
+    background: #eb2636;
+    color: #fff;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: none;
+    margin-left: auto; /* Add this line to move the button to the right */
+    
+}
+#home-btn a{
+    text-decoration: none;
+    color: #fff;
+}
 
-#next-btn{
+#next-btn {
     background: #001E4D;
     color: #fff;
     width: 150px;
@@ -62,6 +79,10 @@ body{
     margin: 20px auto 0;
     cursor: pointer;
     display: none;
+}
+#action button {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin as needed to create spacing between buttons */
 }
 .correct{
     background: rgb(156, 234, 156);

@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="app">
-        <!-- The alert script is placed here on the quiz page -->
+        
         <script>
             // Retrieve the username from localStorage
             var username = localStorage.getItem("username");
@@ -40,8 +40,10 @@
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
+            <div id="action" >
             <button id="next-btn">Next</button>
-        
+            <button id="home-btn"><a href="../pages/welcome.html">End Quiz</a></button>
+            </div>
             <button id="switch-questions-btn-1" style="display: none;">Switch to Questions Set 1</button>
 <button id="switch-questions-btn-2" style="display: none;">Switch to Questions Set 2</button>
 <button id="switch-questions-btn-3" style="display: none;">Switch to Questions Set 3</button>
