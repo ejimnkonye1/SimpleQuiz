@@ -73,12 +73,12 @@ const questions = [
     },
 
     {
-        question: "Explain the purpose of the HTML <meta> tag and provide an example of how it can be used for SEO optimization.",
+        question: "Explain the purpose of the HTML < meta> tag and provide an example of how it can be used for SEO optimization.",
         answers: [
-            { text: "The <meta> tag is used to define the structure of an HTML document.", correct: false },
-            { text: "The <meta> tag is used to embed audio files in a webpage.", correct: false },
-            { text: "The <meta> tag is used to create interactive forms.", correct: false },
-            { text: "The <meta> tag is used to provide metadata about the HTML document, including keywords and descriptions for SEO optimization.", correct: true },
+            { text: "The < meta> tag is used to define the structure of an HTML document.", correct: false },
+            { text: "The < meta> tag is used to embed audio files in a webpage.", correct: false },
+            { text: "The < meta> tag is used to create interactive forms.", correct: false },
+            { text: "The < meta> tag is used to provide metadata about the HTML document, including keywords and descriptions for SEO optimization.", correct: true },
         ]
     },
     {
@@ -90,15 +90,7 @@ const questions = [
             { text: "HTML entities are used to embed audio files in a webpage.", correct: false },
         ]
     },
-    {
-        question: "Explain the difference between the HTML attributes 'src' and 'href', and provide an example of when to use each.",
-        answers: [
-            { text: "Both 'src' and 'href' are used interchangeably to define the source of an image.", correct: false },
-            { text: "'src' is used for creating interactive forms, while 'href' is used for defining the structure of an HTML document.", correct: false },
-            { text: "'src' is used for defining the source of an image or other media files, such as <img src='image.jpg'>.", correct: true },
-            { text: "'href' is used for defining the hyperlink reference in elements like anchor tags, as in <a href='https://example.com'>Example</a>.", correct: true },
-        ]
-    },
+  
     {
         question: "What is the purpose of the HTML5 'data-*' attributes, and how can they be used?",
         answers: [
@@ -206,85 +198,165 @@ const questions2 = [
         ]
     },
     {
-        question: "What is the CSS 'box-shadow' property, and how can it be used to create visual effects in web design? Provide an example.",
+        question: "What is the CSS selector used to target an HTML element with the id attribute of 'my-element'?",
         answers: [
-            { text: "The 'box-shadow' property is used to add a shadow effect to elements. It takes values for the horizontal and vertical offsets, blur radius, spread radius, and shadow color. For example, 'box-shadow: 3px 3px 5px 0px #888888;' creates a subtle shadow effect for an element.", correct: true },
-            { text: "The 'box-shadow' property is used to define the layout of elements in a web page.", correct: false },
-            { text: "The 'box-shadow' property is used for text formatting in CSS.", correct: false },
-            { text: "The 'box-shadow' property has no practical use in web design.", correct: false },
-        ]
-    },
-    
-    {
-        question: "Explain the concept of CSS pseudo-elements, and provide examples of when and how they are used.",
-        answers: [
-            { text: "CSS pseudo-elements are used to style specific parts of an element. They start with a double colon (::) and allow you to add content or style elements such as '::before' and '::after'. For example, '::before' can be used to add decorative content before an element, and '::first-line' can style the first line of text within an element.", correct: true },
-            { text: "CSS pseudo-elements are used to define the layout of elements in a web page.", correct: false },
-            { text: "CSS pseudo-elements are used to control the visibility of elements.", correct: false },
-            { text: "CSS pseudo-elements are not valid CSS selectors.", correct: false },
-        ]
-    },
-    
-    
-    
-    {
-        question: "Explain the concept of CSS grid layout, and how does it differ from 'flexbox'? Provide an example of when to use CSS grid.",
-        answers: [
-            { text: "CSS grid layout is a two-dimensional layout system that allows you to create grid structures for complex layouts. Unlike 'flexbox,' which is one-dimensional, grid layout works in both rows and columns, making it suitable for grid-based designs like magazine layouts or responsive grids for content positioning.", correct: true },
-            { text: "CSS grid layout is primarily used for defining the layout of text elements in CSS.", correct: false },
-            { text: "CSS grid layout is used for creating interactive forms.", correct: false },
-            { text: "CSS grid layout has no practical use in web design.", correct: false },
-        ]
-    },
-    
-    {
-        question: "What is the 'z-index' property in CSS, and how does it affect the stacking order of elements on a web page? Provide an example.",
-        answers: [
-            { text: "The 'z-index' property controls the stacking order of elements with a 'position' property other than 'static.' Elements with a higher 'z-index' value will appear on top of elements with a lower value. For example, 'z-index: 1;' places an element above an element with 'z-index: 0;'.", correct: true },
-            { text: "The 'z-index' property controls the font size of text elements in CSS.", correct: false },
-            { text: "The 'z-index' property has no impact on the stacking order of elements.", correct: false },
-            { text: "The 'z-index' property is used for creating animations in CSS.", correct: false },
-        ]
-    },
-    
-   
-    
-    {
-        question: "How can you include an external CSS file in an HTML document?",
-        answers: [
-            { text: "< style src='styles.css'></style>", correct: false },
-            { text: "< link rel='stylesheet' href='styles.css'>", correct: true },
-            { text: "< css>styles.css</css>", correct: false },
-            { text: "< script src='styles.css'></script>", correct: false },
+            { text: "#my-element", correct: true },
+            { text: ".my-element", correct: false },
+            { text: "my-element", correct: false },
+            { text: "id=my-element", correct: false },
         ]
     },
     {
-        question: "Which CSS property is used to change the text color of an element?",
+        question: "What is the CSS selector used to target all <p> elements within a <div> with the class 'container'?",
         answers: [
-            { text: "text-color", correct: false },
-            { text: "font-color", correct: false },
-            { text: "color", correct: true },
+            { text: "div.container > p", correct: false },
+            { text: "div > p.container", correct: false },
+            { text: ".container p", correct: true },
+            { text: "div.p", correct: false },
+        ]
+    },
+    {
+        question: "What is the purpose of the 'z-index' property in CSS?",
+        answers: [
+            { text: "To control the spacing between elements", correct: false },
+            { text: "To control the stacking order of positioned elements", correct: true },
+            { text: "To control the font size of text", correct: false },
+            { text: "To control the background color of elements", correct: false },
+        ]
+    },
+    {
+        question: "How can you center an element horizontally in CSS?",
+        answers: [
+            { text: "Using margin: auto;", correct: true },
+            { text: "Using text-align: center;", correct: false },
+            { text: "Using padding: auto;", correct: false },
+            { text: "Using float: center;", correct: false },
+        ]
+    },
+    {
+        question: "What is the CSS property used to add shadows to elements?",
+        answers: [
+            { text: "box-shadow", correct: true },
+            { text: "element-shadow", correct: false },
+            { text: "shadow-effect", correct: false },
+            { text: "text-shadow", correct: false },
+        ]
+    },
+    {
+        question: "What is the CSS property for changing the font size of text?",
+        answers: [
+            { text: "font-style", correct: false },
+            { text: "text-size", correct: false },
+            { text: "font-size", correct: true },
             { text: "text-style", correct: false },
         ]
     },
     {
-        question: "What is responsive web design, and how does CSS play a crucial role in creating responsive layouts? Provide an example of a responsive design technique.",
+        question: "How can you make text bold in CSS?",
         answers: [
-         
-            { text: "Responsive web design is primarily about creating interactive forms.", correct: false },
-            { text: "Responsive web design is used for defining the layout of text elements in CSS.", correct: false },
-            { text: "Responsive web design is an approach that makes web pages render well on various devices and window or screen sizes. CSS media queries are used to apply different styles based on screen characteristics. For example, you can use a media query to change the layout of a navigation menu from horizontal to vertical when the screen width is below a certain threshold.", correct: true },
-            { text: "Responsive web design has no impact on web development.", correct: false },
+            { text: "Using font-weight: bold;", correct: true },
+            { text: "Using text-decoration: bold;", correct: false },
+            { text: "Using font-style: bold;", correct: false },
+            { text: "Using text-weight: bold;", correct: false },
         ]
     },
-    
     {
-        question: "Explain the CSS 'transition' property and its role in creating smooth animations on web pages. Provide an example of a simple CSS transition.",
+        question: "What is the CSS property for changing the background color of an element?",
         answers: [
-            { text: "The 'transition' property is used to define the font size of text elements in CSS.", correct: false },
-            { text: "The 'transition' property in CSS is used to control the smoothness of animations when an element changes from one state to another (e.g., hover effects). It defines the duration, timing function, delay, and properties to transition. For example, 'transition: opacity 0.3s ease-in-out;' makes the opacity change smoothly over 0.3 seconds.", correct: true },
-            { text: "The 'transition' property is used for creating interactive forms.", correct: false },
-            { text: "The 'transition' property has no impact on web development.", correct: false },
+            { text: "background-color", correct: true },
+            { text: "color", correct: false },
+            { text: "text-color", correct: false },
+            { text: "bgcolor", correct: false },
+        ]
+    },
+    {
+        question: "What is the purpose of the 'display' property in CSS?",
+        answers: [
+            { text: "To control how an element is rendered in the layout", correct: true },
+            { text: "To control the visibility of an element", correct: false },
+            { text: "To control the size of an element", correct: false },
+            { text: "To control the order of elements", correct: false },
+        ]
+    },
+    {
+        question: "How do you select all even-numbered rows of a table using CSS?",
+        answers: [
+            { text: ":even-row", correct: false },
+            { text: ":nth-child(even)", correct: true },
+            { text: ":even", correct: false },
+            { text: ":odd", correct: false },
+        ]
+    },
+    {
+        question: "What is the CSS property for changing the color of text?",
+        answers: [
+            { text: "font-color", correct: false },
+            { text: "color", correct: true },
+            { text: "text-color", correct: false },
+            { text: "text-style", correct: false },
+        ]
+    },
+    {
+        question: "How can you create a CSS class that applies a border to an element with a solid red color?",
+        answers: [
+            { text: ".red-border { border: 1px solid red; }", correct: true },
+            { text: ".border-red { border-color: red; }", correct: false },
+            { text: ".solid-red { border-style: solid; color: red; }", correct: false },
+            { text: ".red-outline { outline: 1px solid red; }", correct: false },
+        ]
+    },
+    {
+        question: "What is the CSS property for controlling the spacing between lines of text?",
+        answers: [
+            { text: "line-height", correct: true },
+            { text: "text-spacing", correct: false },
+            { text: "line-spacing", correct: false },
+            { text: "text-line-height", correct: false },
+        ]
+    },
+    {
+        question: "How can you hide an element from the page layout without removing it from the DOM using CSS?",
+        answers: [
+            { text: "Using display: none;", correct: false },
+            { text: "Using visibility: hidden;", correct: true },
+            { text: "Using opacity: 0;", correct: false },
+            { text: "Using position: absolute;", correct: false },
+        ]
+    },
+    {
+        question: "What is the CSS property for setting the maximum width of an element?",
+        answers: [
+            { text: "max-width", correct: true },
+            { text: "min-width", correct: false },
+            { text: "width-max", correct: false },
+            { text: "element-width-max", correct: false },
+        ]
+    },
+    {
+        question: "What is the purpose of the 'float' property in CSS?",
+        answers: [
+            { text: "To control the alignment of elements within their containing elements", correct: true },
+            { text: "To control the visibility of elements", correct: false },
+            { text: "To control the size of elements", correct: false },
+            { text: "To control the font style of elements", correct: false },
+        ]
+    },
+    {
+        question: "How can you apply a CSS rule to an HTML element with the class 'highlight' when the mouse hovers over it?",
+        answers: [
+            { text: ".highlight:hover { /* CSS styles */ }", correct: true },
+            { text: ".highlight:mouse { /* CSS styles */ }", correct: false },
+            { text: ".highlight:hovered { /* CSS styles */ }", correct: false },
+            { text: ".hover-highlight { /* CSS styles */ }", correct: false },
+        ]
+    },
+    {
+        question: "Which CSS property is used to create a transition effect on an element's hover state?",
+        answers: [
+            { text: "transform", correct: false },
+            { text: "animation", correct: false },
+            { text: "hover-transition", correct: false },
+            { text: "transition", correct: true },
         ]
     },
     {
@@ -364,123 +436,106 @@ const questions2 = [
             { text: "JavaCode", correct: false },
         ]
     },
-    {
-        question: "What is the JavaScript 'strict mode,' and why is it used in modern JavaScript development?",
-        answers: [
-            { text: "JavaScript 'strict mode' is a tool for creating animations in JavaScript.", correct: false },
-            { text: "JavaScript 'strict mode' is a way to opt into a restricted variant of JavaScript that enforces better coding practices. It helps catch common coding mistakes and 'unsafe' actions and improves runtime performance in some cases. It is used in modern JavaScript development to write cleaner, safer, and more reliable code.", correct: true },
-            { text: "JavaScript 'strict mode' is a feature that allows JavaScript code to run without any restrictions.", correct: false },
-            
-            { text: "JavaScript 'strict mode' is used to enable debugging features in the browser.", correct: false },
-        ]
-    },
-    {
-        question: "What is a JavaScript 'arrow function,' and how does it differ from traditional function expressions?",
-        answers: [
-       
-            { text: "A JavaScript 'arrow function' is used exclusively for mathematical calculations.", correct: false },
-            { text: "A JavaScript 'arrow function' can only be used for asynchronous operations.", correct: false },
-            { text: "A JavaScript 'arrow function' is a feature that allows JavaScript code to run without any restrictions.", correct: false },
-            { text: "A JavaScript 'arrow function' is a more concise way to write functions. It has a shorter syntax and doesn't bind its own 'this' value. It inherits the 'this' value from its enclosing (containing) function or context. This is different from traditional function expressions, which have their 'this' value defined when the function is called.", correct: true },
-        ]
-    },
-    {
-        question: "Explain the concept of 'closures' in JavaScript and provide an example of how they can be used in practical applications.",
-        answers: [
-            
-            { text: "Closures are functions that only contain closed curly braces {}.", correct: false },
-            { text: "Closures are functions that are defined inside other functions.", correct: false },
-            { text: "Closures refer to functions that have access to variables from their containing (enclosing) function's scope. They 'close over' these variables, preserving them even after the outer function has finished executing. Closures are useful for data encapsulation and maintaining state in JavaScript. Here's an example:\n\n```javascript\nfunction outer() {\n  let count = 0;\n  return function inner() {\n    count++;\n    return count;\n  };\n}\nconst counter = outer();\nconsole.log(counter()); // 1\nconsole.log(counter()); // 2\n```", correct: true },
-            { text: "Closures are functions that have no access to external variables.", correct: false },
-        ]
-    },
-    {
-        question: "What is the 'this' keyword in JavaScript, and how does its value change in different contexts?",
-        answers: [
-            { text: "The 'this' keyword always refers to the global object (e.g., 'window' in a browser).", correct: false },
-            { text: "The 'this' keyword refers to the object that is currently executing the function. Its value can change based on how a function is called, such as with dot notation or 'call' and 'apply' methods.", correct: true },
-            { text: "The 'this' keyword can only be used inside arrow functions in JavaScript.", correct: false },
-            { text: "The 'this' keyword is reserved for defining custom objects in JavaScript.", correct: false },
-        ]
-    },
-    {
-        question: "Explain the event delegation pattern in JavaScript and why it is useful in web development.",
-        answers: [
-            { text: "Event delegation is a pattern for handling exceptions in JavaScript applications.", correct: false },
-            { text: "Event delegation is a pattern where events are directly attached to individual elements, reducing the need for event listeners. This pattern is useful for optimizing performance in applications with many dynamic elements, as it avoids the overhead of attaching listeners to each element.", correct: true },
-            { text: "Event delegation is a pattern for delegating user authentication to external services.", correct: false },
-          
-            { text: "Event delegation is a pattern for managing asynchronous operations in JavaScript.", correct: false },
-        ]
-    },
-    {
-        question: "What is the purpose of the JavaScript 'bind' method, and how does it differ from 'call' and 'apply'?",
-        answers: [
-            { text: "The 'bind' method is used to create a new function with a specific 'this' context and any desired arguments. Unlike 'call' and 'apply', it does not immediately invoke the function; instead, it returns a new function that can be called later.", correct: true },
-            { text: "The 'bind' method is used to call a function with a specific 'this' context and arguments, similar to 'call'.", correct: false },
-            { text: "The 'bind' method is used to call a function with a specific 'this' context and an array of arguments, similar to 'apply'.", correct: false },
-            { text: "The 'bind' method is used to execute a function immediately, without specifying 'this' context or arguments.", correct: false },
-        ]
-    },
-    {
-        question: "What are Promises in JavaScript, and how do they help in handling asynchronous operations?",
-        answers: [
-            { text: "Promises are a way to represent values that might not be available yet but will be at some point in the future. They help manage asynchronous operations by providing a more structured and readable way to handle callbacks and error handling.", correct: true },
-            { text: "Promises are a way to create animated effects in JavaScript.", correct: false },
-            { text: "Promises are used to declare variables in JavaScript.", correct: false },
-            { text: "Promises are used to define classes in JavaScript.", correct: false },
-        ]
-    },
-   
-    {
-        question: "What is the 'Event Loop' in JavaScript, and how does it enable non-blocking I/O operations?",
-        answers: [
-            { text: "The 'Event Loop' is a core concept in JavaScript's concurrency model. It allows JavaScript to perform non-blocking I/O operations by handling asynchronous tasks in the background and executing callback functions when those tasks are completed. This prevents the main thread from getting blocked and keeps the application responsive.", correct: true },
-            { text: "The 'Event Loop' is a tool for creating animations in JavaScript.", correct: false },
-            { text: "The 'Event Loop' is a feature for defining custom events in JavaScript.", correct: false },
-            { text: "The 'Event Loop' is a way to block I/O operations in JavaScript.", correct: false },
-        ]
-    },
-   
-    
-   
-    {
-        question: "What is the purpose of the JavaScript 'reduce' function, and how is it used to process arrays?",
-        answers: [
-            { text: "The 'reduce' function is used to process arrays by applying a provided function to accumulate a single result. It iterates through the array's elements and accumulates a value (e.g., sum or product) based on the function's logic. For example:\n\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);\nconsole.log(sum); // 15\n```", correct: true },
-            { text: "The 'reduce' function is used to filter out elements from an array.", correct: false },
-            { text: "The 'reduce' function is used to transform an array into a string.", correct: false },
-            { text: "The 'reduce' function is used to add new elements to the end of an array.", correct: false },
-        ]
-    },
-    {
-        question: "What is the difference between 'undefined' and 'null' in JavaScript, and when would you use each?",
-        answers: [
-            { text: "'Undefined' represents a variable that has been declared but has not been assigned a value. 'Null' represents an intentional absence of any object value. You might use 'undefined' when a variable is expected to have a value later, and 'null' when you want to indicate that a variable intentionally has no value or that an object property should be empty.", correct: true },
-            { text: "'Undefined' and 'null' are the same in JavaScript and can be used interchangeably.", correct: false },
-            { text: "'Undefined' represents an intentional absence of a value, while 'null' represents a variable with an unspecified value.", correct: false },
-            { text: "'Undefined' and 'null' both indicate that a variable has been deleted.", correct: false },
-        ]
-    },
-    {
-        question: "Explain the concept of 'hoisting' in JavaScript and provide an example of how it works.",
-        answers: [
-           
-            { text: "Hoisting is a process where JavaScript code is compressed to improve performance.", correct: false },
-            { text: "Hoisting is a security feature in JavaScript that prevents certain actions.", correct: false },
-            { text: "Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during compilation. This means that you can use a variable or function before it is declared in your code. For example:\n\n```javascript\nconsole.log(x); // undefined\nvar x = 5;\n```", correct: true },
-            { text: "Hoisting is a way to hide JavaScript code from view.", correct: false },
-        ]
-    },
-    {
-        question: "What is the 'Event Loop' in JavaScript, and how does it enable non-blocking I/O operations?",
-        answers: [
-            { text: "The 'Event Loop' is a tool for creating animations in JavaScript.", correct: false },
-            { text: "The 'Event Loop' is a core concept in JavaScript's concurrency model. It allows JavaScript to perform non-blocking I/O operations by handling asynchronous tasks in the background and executing callback functions when those tasks are completed. This prevents the main thread from getting blocked and keeps the application responsive.", correct: true },
-            { text: "The 'Event Loop' is a feature for defining custom events in JavaScript.", correct: false },
-            { text: "The 'Event Loop' is a way to block I/O operations in JavaScript.", correct: false },
-        ]
-    },
+
+{
+    question: "What is JavaScript 'strict mode,' and why is it used in modern development?",
+    answers: [
+        { text: "Tool for animations", correct: false },
+        { text: "Enforces coding practices", correct: true },
+        { text: "No restrictions", correct: false },
+        { text: "Enable debugging", correct: false },
+    ]
+},
+{
+    question: "What is a JavaScript 'arrow function,' and how does it differ from traditional functions?",
+    answers: [
+        { text: "For mathematical calculations", correct: false },
+        { text: "For asynchronous operations", correct: false },
+        { text: "More concise, inherits 'this'", correct: true },
+        { text: "No difference", correct: false },
+    ]
+},
+{
+    question: "Explain the concept of 'closures' in JavaScript.",
+    answers: [
+        { text: "Functions with curly braces", correct: false },
+        { text: "Defined inside other functions", correct: false },
+        { text: "Preserves variables from outer function", correct: true },
+        { text: "No access to external variables", correct: false },
+    ]
+},
+{
+    question: "What is the 'this' keyword in JavaScript, and how does its value change?",
+    answers: [
+        { text: "Refers to the global object", correct: false },
+        { text: "Refers to the current object", correct: true },
+        { text: "Only in arrow functions", correct: false },
+        { text: "Reserved for custom objects", correct: false },
+    ]
+},
+{
+    question: "Explain event delegation in JavaScript and its usefulness.",
+    answers: [
+        { text: "Handling exceptions", correct: false },
+        { text: "Attached to individual elements", correct: true },
+        { text: "Managing authentication", correct: false },
+        { text: "Managing asynchronous operations", correct: false },
+    ]
+},
+{
+    question: "Purpose of 'bind' method in JavaScript and how it differs from 'call' and 'apply'?",
+    answers: [
+        { text: "Create new function, specific 'this' context", correct: true },
+        { text: "Call with specific 'this' context", correct: false },
+        { text: "Call with 'this' context and arguments", correct: false },
+        { text: "Execute function immediately", correct: false },
+    ]
+},
+{
+    question: "What are Promises in JavaScript and their role in handling asynchronous operations?",
+    answers: [
+        { text: "Represent future values", correct: true },
+        { text: "Create animations", correct: false },
+        { text: "Declare variables", correct: false },
+        { text: "Define classes", correct: false },
+    ]
+},
+{
+    question: "What is the 'Event Loop' in JavaScript and its role in non-blocking I/O?",
+    answers: [
+        { text: "Create animations", correct: false },
+        { text: "Handles asynchronous tasks", correct: true },
+        { text: "Define custom events", correct: false },
+        { text: "Block I/O operations", correct: false },
+    ]
+},
+{
+    question: "Purpose of the 'reduce' function in JavaScript and how it processes arrays?",
+    answers: [
+        { text: "Process arrays by applying a function", correct: true },
+        { text: "Filter elements", correct: false },
+        { text: "Transform into a string", correct: false },
+        { text: "Add elements to the end", correct: false },
+    ]
+},
+{
+    question: "Difference between 'undefined' and 'null' in JavaScript and when to use each?",
+    answers: [
+        { text: "Interchangeable", correct: false },
+        { text: "'Undefined' for future value, 'null' for intentional absence", correct: true },
+        { text: "'Undefined' for intentional absence, 'null' for unspecified value", correct: false },
+        { text: "Both indicate variable deletion", correct: false },
+    ]
+},
+{
+    question: "Explain 'hoisting' in JavaScript and provide an example.",
+    answers: [
+        { text: "Compressing code", correct: false },
+        { text: "Security feature", correct: false },
+        { text: "Declarations moved to top", correct: true },
+        { text: "Hiding code", correct: false },
+    ]
+},
   
     
     {
@@ -748,19 +803,21 @@ function handleNextButton(){
     currentQuestionnum++;
     if(currentQuestionnum < 10){
         showQuestion();
+        clearInterval(timerInterval);
         timerDisplay.style.display = "block";// show timer on next question
         startTimer(); // start timer for next question.
         
     }else{
         
         showScore();
+      startQuiz  
     }
 
 
 }
 
  nextButton.addEventListener("click", ()=>{
-    if(currentQuestionnum < questions.length){
+    if(currentQuestionnum < 10){
         timerDisplay.style.display = "none";
         handleNextButton();
     }else{
