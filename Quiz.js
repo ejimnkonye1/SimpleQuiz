@@ -9,6 +9,33 @@ const questions = [
         ]
     },
     {
+        question: "What is the purpose of the HTML 'time' element?",
+        answers: [
+            { text: "To display the current time in the user's timezone", correct: false },
+            { text: "To create countdown timers", correct: false },
+            { text: "To define a specific period of time or a timestamp", correct: true },
+            { text: "To schedule tasks to run at specific times", correct: false },
+        ]
+    },
+    {
+        question: "Which HTML5 feature is used for storing data on the client-side, even after the browser is closed?",
+        answers: [
+            { text: "LocalStorage", correct: true },
+            { text: "SessionStorage", correct: false },
+            { text: "WebSQL", correct: false },
+            { text: "IndexedDB", correct: false },
+        ]
+    },
+    {
+        question: "What is the purpose of the HTML 'svg' element?",
+        answers: [
+            { text: "To define a table structure", correct: false },
+            { text: "To create scalable vector graphics", correct: true },
+            { text: "To embed an audio file", correct: false },
+            { text: "To style text with gradients", correct: false },
+        ]
+    },
+    {
         question: "Which HTML tag is used to create a hyperlink?",
         answers: [
             { text: "< link>", correct: false },
@@ -91,15 +118,7 @@ const questions = [
         ]
     },
   
-    {
-        question: "What is the purpose of the HTML5 'data-*' attributes, and how can they be used?",
-        answers: [
-            { text: "The 'data-*' attributes are used to apply custom styles to HTML elements.", correct: false },
-            { text: "The 'data-*' attributes are used to define a hyperlink within an HTML document.", correct: false },
-            { text: "The 'data-*' attributes are used to store custom data private to the page or application.", correct: true },
-            { text: "The 'data-*' attributes are used to specify the width of an element in pixels.", correct: false },
-        ]
-    },
+    
     {
         question: "What is the purpose of the HTML 'cite' element?",
         answers: [
