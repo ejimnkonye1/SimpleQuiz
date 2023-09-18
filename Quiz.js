@@ -78,7 +78,7 @@ const questions = [
             { text: "The < meta> tag is used to define the structure of an HTML document.", correct: false },
             { text: "The < meta> tag is used to embed audio files in a webpage.", correct: false },
             { text: "The < meta> tag is used to create interactive forms.", correct: false },
-            { text: "The < meta> tag is used to provide metadata about the HTML document, including keywords and descriptions for SEO optimization.", correct: true },
+            { text: "The < meta> tag is used to provide metadata about the HTML document.", correct: true },
         ]
     },
     {
@@ -101,12 +101,12 @@ const questions = [
         ]
     },
     {
-        question: "Explain the purpose of the HTML5 'canvas' element and provide an example of how it can be used to draw graphics.",
+        question: "What is the purpose of the HTML 'cite' element?",
         answers: [
-            { text: "The 'canvas' element is used for embedding audio files in a webpage.", correct: false },
-            { text: "The 'canvas' element is used to define the structure of an HTML document.", correct: false },
-            { text: "The 'canvas' element is used for creating hyperlinks in an HTML document.", correct: false },
-            { text: "The 'canvas' element is used to draw graphics, such as charts, graphs, and interactive animations, using JavaScript.", correct: true },
+            { text: "To define the title of a work", correct: true },
+            { text: "To provide a caption for an image", correct: false },
+            { text: "To create a table", correct: false },
+            { text: "To create a user-input form", correct: false },
         ]
     },
     {
@@ -128,21 +128,22 @@ const questions = [
         ]
     },
     {
-        question: "What is the HTML5 'contenteditable' attribute, and how can it be used to create editable content on a webpage?",
+        question: "What is the purpose of the HTML 'abbr' element?",
         answers: [
-            { text: "The 'contenteditable' attribute is used to create interactive forms.", correct: false },
-            { text: "The 'contenteditable' attribute is used to define the structure of an HTML document.", correct: false },
-            { text: "The 'contenteditable' attribute is used for creating hyperlinks in an HTML document.", correct: false },
-            { text: "The 'contenteditable' attribute is used to make an element, such as a <div> or a <p>, editable by the user.", correct: true },
+            { text: "To provide a caption for an image", correct: false },
+            { text: "To define an abbreviation or acronym", correct: true },
+            { text: "To create a user-input form", correct: false },
+            { text: "To create a table", correct: false },
         ]
     },
+
     {
         question: "Explain the purpose of the HTML 'aria-label' attribute and how it contributes to accessibility in web development.",
         answers: [
             { text: "The 'aria-label' attribute is used to specify the width of an element in pixels.", correct: false },
             { text: "The 'aria-label' attribute is used to define the structure of an HTML document.", correct: false },
             { text: "The 'aria-label' attribute is used to provide alternative text for images.", correct: false },
-            { text: "The 'aria-label' attribute is used to provide a human-readable label or description for an element when a text label is not visible.", correct: true },
+            { text: "The 'aria-label' attribute is used to provide a human-readable description for an element when a text label is not visible.", correct: true },
         ]
     },
     {
@@ -151,16 +152,16 @@ const questions = [
             { text: "Semantic HTML elements are used to define the structure of an HTML document.", correct: false },
             { text: "Semantic HTML elements are used for creating hyperlinks in an HTML document.", correct: false },
             { text: "Semantic HTML elements are used to specify the width of an element in pixels.", correct: false },
-            { text: "Semantic HTML elements are HTML tags that carry meaning and describe the content they enclose. They are important in modern web development because they provide a clear and structured way to describe the purpose of different parts of a webpage.", correct: true },
+            { text: "Semantic HTML elements are HTML tags that carry meaning and describe the content they enclose.", correct: true },
         ]
     },
     {
-        question: "Explain the purpose of the HTML 'defer' and 'async' attributes when including external JavaScript files, and when would you use each?",
+        question: "Which HTML tag is used for creating a definition list?",
         answers: [
-            { text: "The 'defer' attribute is used to create interactive forms.", correct: false },
-            { text: "The 'async' attribute is used to specify the width of an element in pixels.", correct: false },
-            { text: "The 'defer' and 'async' attributes are used to define the structure of an HTML document.", correct: false },
-            { text: "The 'defer' and 'async' attributes are used when including external JavaScript files. 'defer' indicates that the script should be executed after the HTML document is parsed, preserving the order of execution. 'async' indicates that the script can be executed asynchronously without blocking HTML parsing. You would use 'defer' when script order matters or when the script relies on the DOM structure. 'async' can be used when script order doesn't matter and the script can run independently.", correct: true },
+            { text: "< list >", correct: false },
+            { text: "< dl >", correct: true },
+            { text: "< ul >", correct: false },
+            { text: "< li >", correct: false },
         ]
     },
 
@@ -172,6 +173,69 @@ const questions = [
             { text: "Create interactive forms", correct: false },
             { text: "Embed content from another website", correct: true },
             { text: "Define a section of content", correct: false },
+        ]
+    },
+    {
+        question: "Which HTML tag is used to create a clickable button?",
+        answers: [
+            { text: "< input >", correct: false },
+            { text: "< submit >", correct: false },
+            { text: "< click >", correct: false },
+            { text: "< button >", correct: true },
+        ]
+    },
+    {
+        question: "What is the purpose of the HTML 'blockquote' element?",
+        answers: [
+            { text: "To define a quotation or citation", correct: true },
+            { text: "To provide a caption for an image", correct: false },
+            { text: "To create a user-input form", correct: false },
+            { text: "To create a block of text", correct: false },
+        ]
+    },
+    {
+        question: "What is the purpose of the HTML 'mark' element?",
+        answers: [
+            { text: "To create a user-input form", correct: false },
+            { text: "To highlight text", correct: true },
+            { text: "To create a table", correct: false },
+            { text: "To define an abbreviation or acronym", correct: false },
+        ]
+    },
+    {
+        question: "What is the purpose of the HTML 'head' element?",
+        answers: [
+            { text: "To define the main content of the document", correct: false },
+            { text: "To create a header section at the top of the page", correct: false },
+            { text: "To define a list of items", correct: false },
+            { text: "To store metadata about the document", correct: true },
+        ]
+    },
+    {
+        question: "What is the purpose of the HTML 'label' element?",
+        answers: [
+            { text: "To create a table", correct: false },
+            { text: "To define a section of text", correct: false },
+            { text: "To provide a caption for an input element", correct: true },
+            { text: "To change the font color", correct: false },
+        ]
+    },
+    {
+        question: "What is the purpose of the HTML 'form' element?",
+        answers: [
+            { text: "To define the structure of a table", correct: false },
+            { text: "To create a list of options", correct: false },
+            { text: "To create a user-input form", correct: true },
+            { text: "To create a section of text", correct: false },
+        ]
+    },
+    {
+        question: "Which HTML tag is used to emphasize text without defining its importance?",
+        answers: [
+            { text: "< italic >", correct: false },
+            { text: "< strong >", correct: false },
+            { text: "< highlight >", correct: false },
+            { text: "< em >", correct: true },
         ]
     },
     {
@@ -654,7 +718,7 @@ function showQuestion() {
     // Shuffle the currentQuestions array before getting the current question
     shuffleArray(currentQuestions);
 
-    if (currentQuestionnum < 10) {
+    if (currentQuestionnum < 15) {
         let currentQuestion = currentQuestions[currentQuestionnum];
         let questionsno = currentQuestionnum + 1;
         questionsElement.innerHTML = questionsno + ". " + currentQuestion.question;
@@ -671,7 +735,7 @@ function showQuestion() {
         });
 
         startTimer();
-        timeLeft = 10;
+        timeLeft = 15;
     } else {
         // Display final score or completion message
         
@@ -771,7 +835,7 @@ function selectAnswer(e){
 function showScore(){
     timerDisplay.style.display = "none";  // hide timer when quiz end.
     resetState();
-    const totalQuestions = 10; // Set the total number of questions to 10
+    const totalQuestions = 15; // Set the total number of questions to 10
    
     const percentageScore = (score / totalQuestions) * 100;
 
@@ -801,7 +865,7 @@ function showScore(){
 
 function handleNextButton(){
     currentQuestionnum++;
-    if(currentQuestionnum < 10){
+    if(currentQuestionnum < 15){
         showQuestion();
         clearInterval(timerInterval);
         timerDisplay.style.display = "block";// show timer on next question
@@ -817,7 +881,7 @@ function handleNextButton(){
 }
 
  nextButton.addEventListener("click", ()=>{
-    if(currentQuestionnum < 10){
+    if(currentQuestionnum < 15){
         timerDisplay.style.display = "none";
         handleNextButton();
     }else{
@@ -826,7 +890,7 @@ function handleNextButton(){
         timerDisplay.style.display = "none";  // hide timer when quiz end.
     }
  });
- let timeLeft = 10; // Set the initial time in seconds
+ let timeLeft = 15; // Set the initial time in seconds
  let timerInterval; // Store the interval ID for the timer
  const timerDisplay = document.getElementById('timer'); // Get the timer element
  
